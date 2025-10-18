@@ -18,7 +18,7 @@ app.post("/api/issues", async (req, res) => {
   try {
     // GitHub API 호출
     const response = await axios.post(
-      "https://api.github.com/repos/hyunseok9898/github-issue/issues",
+      "https://github-issue-backend-lyart.vercel.app/api/issues",
       { title, body },
       {
         headers: {
